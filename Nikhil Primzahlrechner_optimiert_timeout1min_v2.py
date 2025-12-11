@@ -11,7 +11,7 @@ def primzahl_ueberpruefung(zahl, timeout):
         if zahl % primzahl == 0 and zahl != primzahl:
             is_primzahl = False
             break
-
+ #break
     if is_primzahl and zahl > bekannte_primzahlen[-1]:
         root1 = round(zahl ** 0.5)
         ungeradeTeilermenge1 = range(max(bekannte_primzahlen[-1] + 1, 3), round(root1) + 1, 2)
